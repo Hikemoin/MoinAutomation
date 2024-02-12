@@ -19,12 +19,12 @@ public class LoginPage {
 	@FindBy(xpath = "//a[contains(text(),\"Continue\")]")
 	private WebElement register;
 
-	@FindBy(linkText = "Forgotten Password")
+	@FindBy(linkText = "Forgot?")
 	private WebElement forgetPass;
 	@FindBy(xpath = "//div[@class=\"alert alert-success alert-dismissible\"]")
 	private WebElement forgetPassSuccessText;
 
-	@FindBy(xpath = "(//a[contains(text(),\"Forgotten Password\")])[2]")
+	@FindBy(xpath = "//*[@id="forget-password"]")
 	private WebElement forgetPassColButton;
 
 	@FindBy(xpath = "//input[@placeholder=\"Search\"]")

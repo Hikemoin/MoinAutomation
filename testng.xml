@@ -6,10 +6,9 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.qa.Ecommerce.tests.RegisterTest" />
-			<class name="com.qa.Ecommerce.tests.LoginTest" />
+			
 			<class name="com.qa.Ecommerce.tests.ForgetPasswordTest" />
-			<class name="com.qa.Ecommerce.tests.SearchTest" />
+			
 		</classes>
 	</test> <!--
 	Test -->

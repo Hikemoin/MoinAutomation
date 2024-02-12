@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class AccountPage {
 
-	@FindBy(xpath = "//h2[text()=\"My Account\"]")
+	@FindBy(xpath = "/html/body/div[1]/div[1]/div[1]/div/div[1]/div/div[1]/h3")
 	private WebElement sucessText;
 
 	public String validLoginText() {

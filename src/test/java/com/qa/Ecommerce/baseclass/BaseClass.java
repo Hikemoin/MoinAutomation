@@ -13,10 +13,10 @@ public class BaseClass extends HomePage {
 
 	@BeforeMethod
 	public static void setUp() {
-		Commons.openBrowser(PropertiesReading.setProperty("Browser"));
+		Commons.openBrowser(PropertiesReading.setProperty("Chrome"));
 		Commons.maximizeBrowser();
 		Commons.implicitWait(Commons.IMPLICIT_WAIT_TIME);
-		Commons.launhUrl(PropertiesReading.setProperty("Url"));
+		Commons.launhUrl(PropertiesReading.setProperty("https://my.hikeup.com/"));
 		HomePage homePage = PageFactory.initElements(Constants.driver, HomePage.class);
 		homePage.myAccountDropdown();
 		homePage.loginButton();

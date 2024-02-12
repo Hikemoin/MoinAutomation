@@ -5,14 +5,21 @@ import org.openqa.selenium.support.FindBy;
 
 public class ForgetPasswordPage {
 
-	@FindBy(name = "email")
+	@FindBy(name = "tenancyName")
+	private WebElement storeURL;
+
+	@FindBy(name = "EmailAddress")
 	private WebElement email;
 
-	@FindBy(xpath = "//input[@value=\"Continue\"]")
+	@FindBy(xpath = "/html/body/div[2]/div[1]/div[1]/div/div/form/div[4]/button")
 	private WebElement button;
 
-	@FindBy(xpath = "//div[@class=\"alert alert-danger alert-dismissible\"]")
+	@FindBy(xpath = "/html/body/div[6]/div/div[2]")
 	private WebElement warningText;
+
+	public void existingStore(String storeName) {
+		storeURL.sendKeys(storeName);
+	}
 
 	public void alreadyRegisterEmail(String rEmail) {
 		email.sendKeys(rEmail);
